@@ -3,13 +3,12 @@
 A small Dart package providing integer constants, conversion utilities, and
 extensions for working with `int` values.
 
-## Установка
+## Installation
 
-Add the package to your `pubspec.yaml`:
+Add the package to your project:
 
-```yaml
-dependencies:
-  int_extension: ^1.1.0
+```sh
+dart pub add int_extension
 ```
 
 Then import it:
@@ -18,7 +17,7 @@ Then import it:
 import 'package:int_extension/int_extension.dart';
 ```
 
-## Использование
+## Usage
 
 ### Convert a value to `int`
 
@@ -36,7 +35,7 @@ void main() {
   print(intFromDynamic(12.8)); // 12
   print(intFromDynamic(Decimal.parse('12.8'))); // 12
   print(intFromDynamic('42')); // 42
-  print(intFromDynamic('не число', 0)); // 0
+  print(intFromDynamic('not a number', 0)); // 0
   print(intFromDynamic(null)); // null
 }
 ```
