@@ -11,17 +11,20 @@ const int intMin = -9223372036854775808;
 /// The number of decimal digits in the largest signed 64-bit integer value.
 const int intMaxDigits = 19;
 
-/// Converts a supported value to an integer.
+/// Converts [dynamicValue] to an integer.
 ///
-/// Integers are returned unchanged. Doubles and [Decimal] values are
-/// truncated to an integer. Strings are parsed as integers; if parsing fails,
-/// [defaultValue] is returned. Returns `null` for `null` and unsupported
-/// value types.
+/// [dynamicValue] is returned unchanged when it is an integer. Doubles and
+/// [Decimal] values are truncated to an integer. Strings are parsed as
+/// integers; if parsing fails, [defaultValue] is returned. Returns `null` for
+/// `null` and unsupported value types.
+///
+/// [defaultValue] is the value returned when [dynamicValue] is a string that
+/// cannot be parsed as an integer.
 int? intFromDynamic(dynamic dynamicValue, [int? defaultValue]) {
   if (dynamicValue is int) return dynamicValue;
   if (dynamicValue is double) return dynamicValue.toInt();
   if (dynamicValue is String) return int.tryParse(dynamicValue) ?? defaultValue;
-  if (dynamicValue is Decimal) return dynamicValue.toInt();
+  if (dynamicValue is Decimal) return dynamicValue.toBigInt().toInt();
   return null;
 }
 
