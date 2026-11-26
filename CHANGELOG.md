@@ -1,3 +1,8 @@
+## 1.1.4
+
+Updated:
+- Raised the minimum supported `decimal` dependency version from `1.0.0` to `1.4.0`, keeping the upper bound at `3.2.7`.
+
 ## 1.1.3
 
 Added:
