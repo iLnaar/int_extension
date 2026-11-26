@@ -1,3 +1,11 @@
+## 1.1.3
+
+Added:
+- Added an example demonstrating the package's usage.
+
+Updated:
+- Adjusted dependency constraints.
+
 ## 1.1.2
 
 - Upgrade the decimal dependency to 2.0.0 and convert Decimal values through BigInt.

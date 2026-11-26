@@ -1,6 +1,6 @@
 name: int_extension
 description: Extends Dart's built-in int type with useful utilities and additional functionality.
-version: 1.1.2
+version: 1.1.3
 repository: https://github.com/iLnaar/int_extension
 
 environment:
