@@ -1,5 +1,5 @@
 name: int_extension
-description: A small Dart package providing integer constants, conversion utilities, and extensions for working with `int` values.
+description: Extends Dart's built-in int type with useful utilities and additional functionality.
 version: 1.1.2
 repository: https://github.com/iLnaar/int_extension
 

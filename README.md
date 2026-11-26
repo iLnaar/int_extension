@@ -1,7 +1,7 @@
 # int_extension
 
-A small Dart package providing integer constants, conversion utilities, and
-extensions for working with `int` values.
+A Dart package that expands the functionality of the built-in `int` type with
+useful extensions and utilities.
 
 ## Installation
 
